@@ -1,0 +1,81 @@
+.about__tabs{
+    display: flex;
+    /* justify-content: space-evenly; */
+
+    margin-bottom:2rem;
+
+    /* flex-direction: row; */
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 35%;
+    padding: 8px 24px;
+}
+
+.about__button{
+    font-size: 1.25rem;
+    font-weight:500;
+    cursor: pointer;
+    
+}
+
+.about__button:hover{
+    color: hsl(230,69%, 61%);
+}
+
+.about__icon{
+    font-size: 1.8rem;
+    
+    margin-right: 0.25rem;
+}
+
+.about__data{
+    display: grid;
+    grid-template-columns: 0fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.about__title {
+    font-size: 1rem ;
+    font-weight: 500;
+}
+
+.about__subtitle {
+    display: inline-block;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.about__calendar {
+    font-size: 0.813rem;
+    color: hsl(230,8%, 65%);
+}
+
+.about__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: hsl(230,69%, 61%);
+    border-radius: 50%;
+}
+
+.about__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: hsl(230,69%, 61%);
+    transform: translate(6px, -7px);
+}
+
+.about [data-content] {
+    display: none;
+}
+
+.about__active[data-content]{
+    display: block;
+}
+
+.about__button.about__active {
+    color:hsl(230,69%, 61%);
+}

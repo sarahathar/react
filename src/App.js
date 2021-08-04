@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Home from './pages';
+import {BrowserRouter as Router} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello WOrld</h1>
-        <p> Sarah Athar</p>      
-      </header>
-    </div>
+    <Router>
+      <Home/>
+    </Router>
   );
 }
 
