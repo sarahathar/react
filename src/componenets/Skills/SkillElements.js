@@ -18,7 +18,22 @@ export const SkillsContainer = styled.div`
         padding-top: 15%;
     }
 
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        padding-top: 35%;
+        height: 1000px;
+
+        /* display: block ; */
+    /* justify-content: center; */
+        align-items: center;
+        width: 560px;
+        /* padding-right: 0%; */
+    }
+
     
+    @media only screen and (min-width: 760px) and (max-width: 1000px) {
+        padding-top: 15%;
+        height:900px;
+    }
     /* z-index: 1;  */
 
 
@@ -60,6 +75,9 @@ export const SkillsH1 = styled.div`
         font-size: 2.5rem;
         margin-bottom: 10px;
     }
+
+
+
 
 `
 

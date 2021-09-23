@@ -104,17 +104,17 @@ margin-right: 0.75rem;
     width: 60% ;
 }
 
-.skills__close  .skills__list{
+.skills__close{
     height:0;
     overflow: hidden;
 }
 
-.skills__open  .skills__list{
+.skills__open{
     height: max-content;
     margin-bottom: 2.5rem;
 }
 
-.skills__open .skills__arrow {
+.skills__openarrow{
     transform: rotate(-180deg);
 }
 
@@ -130,3 +130,4 @@ margin-right: 0.75rem;
     font-weight:500;
     cursor: pointer;
 }
+

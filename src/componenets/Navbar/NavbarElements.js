@@ -17,6 +17,24 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        /* z-index: 5; */
+        background: #000;
+        height: 80px;
+        width: 560px;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+    
+    }
 `
 
 export const NavbarContainer = styled.div`
@@ -26,7 +44,11 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;   
+    max-width: 1100px;
+    
+    
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+    }
 `
 
 export const Navlogo = styled(LinkRouter)`
@@ -97,7 +119,7 @@ export const NavBtn = styled.nav`
         z-index: 1; */
     }
 `
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled.a`
     border-radius: 50px;
     background: hsl(230,69%, 61%);
     white-space: nowrap;

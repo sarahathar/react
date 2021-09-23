@@ -15,6 +15,8 @@ export const AboutContainer = styled.div`
     /* z-index: 1;  */
     
     @media only screen and (min-width: 480px) and (max-width: 760px) {
+      
+      
         padding-top: 15%;
     /* align-items: center; */
     
@@ -22,9 +24,40 @@ export const AboutContainer = styled.div`
         /* position: relative; */
     }
 
-    @media only screen and (min-width: 760px) and (max-width: 1000px) {
-        padding-top: 0%;
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        padding-top: 25%;
+        height: 1000px;
+
+        /* display: block ; */
+    /* justify-content: center; */
+        align-items: center;
+        width: 560px;
+        /* padding-right: 0%; */
     }
+
+    @media only screen and (min-width: 760px) and (max-width: 1000px) {
+        padding-top: 15%;
+        height:900px;
+    }
+
+
+    
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        background: #fff;
+        padding-top: 2%;
+        align-items: center;
+        
+        /* height: 865px; */
+        position: relative;
+        /* padding-right: 0%; */
+    }
+
+    
 
 `
 
@@ -97,6 +130,11 @@ export const AboutH2 = styled.div`
     font-weight: 600;
     color: hsl(230,8%, 15%);
 
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        margin-bottom: 10px;
+    }
+
 `
 
 export const AboutP = styled.div`
@@ -113,6 +151,11 @@ export const AboutTitle = styled.p`
     margin-bottom: 5rem;
 
 
+    
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        margin-bottom: 5rem;
+    }
+
     @media only screen and (min-width: 480px) and (max-width: 760px) {
         font-size: 1.3rem;
         margin-bottom: 1rem;
@@ -120,7 +163,7 @@ export const AboutTitle = styled.p`
 
     @media only screen and (min-width: 760px) and (max-width: 1000px) {
         font-size: 1.3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
     }
 `
 
@@ -140,6 +183,15 @@ export const AboutRowContainer = styled.div`
     padding: 8px 24px;
 
 
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 95%;
+            padding: 0px 0px 0px 0px;
+    }
+
     @media only screen and (min-width: 480px) and (max-width: 760px) {
         
         display: flex;
@@ -149,6 +201,28 @@ export const AboutRowContainer = styled.div`
             width: 75%;
             padding: 0px 0px 0px 0px;
     }
+
+
+    @media only screen and (min-width: 760px) and (max-width: 1000px) {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 75%;
+            padding: 0px 0px 0px 0px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 65%;
+            padding: 0px 0px 0px 0px;
+    
+    }
+
+
 `
 
 

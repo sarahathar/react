@@ -56,6 +56,51 @@ const About = () => {
                 
                         {/* <!-- <div></div> --> */}
         
+
+
+                        <div class="about__data">
+                            <div></div>
+                        <div>
+                            {/* <span class="about__rounder"></span> */}
+                            {/* <span class="about__line"></span> */}
+                        </div>
+            
+          
+                                
+                                 <div>
+                                    <h3 class="about__title">Teaching Assistant for Data Structures</h3>
+                                    <span class="about__subtitle">University of Illinois at Chicago</span>
+                                    <div class="about__calendar">
+                                        <i class="uil uil-calendar-alt"></i> January 2021 - Present
+                                    </div>
+                                 </div>
+
+                        </div> 
+
+
+
+
+
+
+
+                        <div class="about__data">
+                            <div></div>
+                        <div>
+                            {/* <span class="about__rounder"></span> */}
+                            {/* <span class="about__line"></span> */}
+                        </div>
+            
+          
+                                <div>
+                                    <h3 class="about__title">Tech Fellow for Android Mobile Development Course</h3>
+                                    <span class="about__subtitle">Codepath.org</span>
+                                    <div class="about__calendar">
+                                        <i class="uil uil-calendar-alt"></i> July 2021 - Present
+                                    </div>
+                                </div>
+            
+                            </div> 
+
                         <div class="about__data">
         
                             <div></div>
@@ -101,13 +146,7 @@ const About = () => {
                         </div>
             
           
-                                <div>
-                                    <h3 class="about__title">Teaching Assistant for Data Structures</h3>
-                                    <span class="about__subtitle">University of Illinois at Chicago</span>
-                                    <div class="about__calendar">
-                                        <i class="uil uil-calendar-alt"></i> January 2021 - May 2021
-                                    </div>
-                                </div>
+                               
             
                             </div> 
                                

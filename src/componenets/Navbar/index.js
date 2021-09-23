@@ -11,6 +11,8 @@ import {Nav,
         NavBtn,
         NavBtnLink} from './NavbarElements';
 
+    import myPDF from "../../pdf/resume.pdf";
+
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
 
@@ -67,15 +69,15 @@ const Navbar = ({toggle}) => {
                                >Contact</NavLinks>
                             </NavItem>
 
-
-                            {/* <NavItem>
-                               <NavLinks to="resume"
+{/* 
+                            <NavItem> 
+                               <NavLinks 
                                smooth={true} duration={500} spy={true} exact='true' offset={-80}
                                >Resume</NavLinks>
-                            </NavItem> */}
+                            </NavItem>  */}
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="/email">Resume</NavBtnLink>
+                            <NavBtnLink href={myPDF} download="Sarah Athar Resume.pdf" target="_blank">Resume</NavBtnLink>
                         </NavBtn>
                 </NavbarContainer>
             </Nav>

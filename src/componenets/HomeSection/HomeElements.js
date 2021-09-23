@@ -30,10 +30,46 @@ export const HomeContainer = styled.div`
 
     @media only screen and (min-width: 760px) and (max-width: 1000px) {
         padding: 0 20px;
-        padding-top: 15%;
+        padding-top: 25%;
         padding-left: 0%;
-        height: 865px;
+        height: 800px;
     }
+
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        display: block ;
+    /* justify-content: center; */
+        align-items: center;
+        /* align-items: flex-start; */
+       
+        padding-top: 50%;
+        padding-right: 0%;
+        height: 1000px;
+        padding-left: 5%;
+        width: 560px;
+        /* padding-right: 0%; */
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        background: #FFF;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: flex-start;
+    /* padding: 5% 0% 15% 12%; */
+/*     
+    height: 800px; */
+    padding: 0 100px;
+    padding-left: 0%;
+    padding-top: 10%;
+    padding-right: 0%;
+    height: 865px;
+    position: relative;
+    z-index: 1;
+        /* padding-right: 0%; */
+    }
+
+
     /* position: relative; */
    
 
@@ -66,6 +102,18 @@ export const HomeRowContainer = styled.div`
         padding: 8px 24px;
 
     }
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 90%;
+        /* padding-left: 0%; */
+        padding: 0px 0px;
+    }
+
+
     /* align-items: flex-end; */
 `
 
@@ -86,6 +134,12 @@ export const HomeH1 = styled.div`
     font-weight: 600;
     font-size: 3rem;
 
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        font-size: 35px;
+        margin-bottom: 1.5rem;
+
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
         font-size: 3rem;
     }
@@ -104,11 +158,19 @@ export const HomeH3 = styled.div`
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
         font-size: 1.7rem;
+        
     }
 
     @media only screen and (min-width: 480px) and (max-width: 760px) {
         font-size: 1.5rem;
     }
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+
 
 `
 export const HomeP = styled.div`
@@ -126,6 +188,11 @@ export const HomeP = styled.div`
         font-size: 1rem;
     }
 
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
 `
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
@@ -139,6 +206,11 @@ export const HomeBlob = styled.svg`
     width: 250px;
     fill:hsl(230,69%, 61%);
 
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        margin-bottom: 3rem;
+    }
+
+
 `
 export const HomeSocialIcon = styled.a`
     font-size: 2.2rem;
@@ -150,3 +222,9 @@ export const HomeSocialIcon = styled.a`
 `
 
 
+export const HomeBlobImage = styled.img`
+    height: 300px;
+    width: 300px;
+
+
+`

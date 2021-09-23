@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useState} from 'react'
+
+
 import { Button } from '../ButtonElements';
 import {SkillsContainer, SkillsWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrp, ImgWrp, Img,
 
@@ -8,10 +10,18 @@ import {SkillsContainer, SkillsWrapper, InfoRow, Column1, Column2, TextWrapper, 
 } from './SkillElements';
 
 import './styles.css';
-import './main.js';
+import {toggleSkills} from './main.js';
 
 
 const Skills = () => {
+    const [toggle, setToggle] = useState("");
+    const [toggle1, setToggle1] = useState("");
+
+    const expand = toggle ? "skills__close" : "skills__open";
+    const expand1 = toggle1 ? "skills__close" : "skills__open";
+    const arrow = toggle ? "skills__arrow" : "skills__openarrow";
+
+
     return (
         
         <SkillsContainer id="skills">
@@ -26,7 +36,7 @@ const Skills = () => {
                     <div>
 
 
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__open" onClick={() => {setToggle(!toggle)}}>
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
@@ -34,10 +44,10 @@ const Skills = () => {
                                     <h1 class="skills__title">Frontend Development</h1>
                                     <span class="skills__subtitle">More than 3 years</span>                                    
                                 </div>
-                                <i class="uil uil-angle-down skills__arrow "></i>
+                                <i class="uil uil-angle-down skills__arrow" ></i>
                             </div>
 
-                            <div class="skills__list grid">
+                            <div class="skills__list grid" className={`navBox ${expand}`}>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">HTML</h3>
@@ -103,18 +113,20 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__open" onClick={() => {setToggle1(!toggle1)}}>
                         <div class="skills__header">
+                            
                             <i class="uil uil-server-network skills__icon"></i>
 
                             <div>
                                 <h1 class="skills__title">Backend Development</h1>
                                 <span class="skills__subtitle">More than 3 years</span>                                    
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                                    <i class="uil uil-angle-down skills__arrow"></i>
+
                         </div>
 
-                        <div class="skills__list grid">
+                        <div class="skills__list grid" className={`navBox ${expand1}`}>
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">C++</h3>

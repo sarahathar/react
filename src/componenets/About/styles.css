@@ -44,12 +44,13 @@
 .about__subtitle {
     display: inline-block;
     font-size: 0.875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .about__calendar {
     font-size: 0.813rem;
     color: hsl(230,8%, 65%);
+    margin-bottom: 1rem;
 }
 
 .about__rounder {
@@ -79,3 +80,66 @@
 .about__button.about__active {
     color:hsl(230,69%, 61%);
 }
+
+@media only screen and (min-width: 260px) and (max-width: 480px) {
+
+    .about__tabs{
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 95%;
+            padding: 0px 0px 0px 0px;
+            
+
+
+    }
+
+
+
+    .about__title {
+        font-size: 1.2rem ;
+        font-weight: 500;
+    }
+    
+    .about__subtitle {
+        display: inline-block;
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .about__icon{
+        font-size: 1.8rem;
+        
+        margin-right: 0.25rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+    
+    .about__tabs{
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 75%;
+            padding: 0px 0px 0px 0px;
+            
+
+
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    
+    .about__tabs{
+        align-items: flex-start;
+        justify-content: space-around;
+            width: 65%;
+            padding: 0px 0px 0px 0px;
+            
+
+
+    }
+}
+

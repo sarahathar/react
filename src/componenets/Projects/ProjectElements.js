@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const ProjectsContainer = styled.div`
     height: 800px;
@@ -32,6 +33,19 @@ export const ProjectsContainer = styled.div`
         padding-bottom: 0%;
     }
 
+
+    @media only screen and (min-width: 260px) and (max-width: 480px) {
+        padding-top: 35%;
+        height: 1100px;
+        align-items: center;
+        width: 560px;
+        /* padding-right: 5%; */
+    }
+
+    @media only screen and (min-width: 760px) and (max-width: 1000px) {
+        padding-top: 15%;
+        height:900px;
+    }
     
 
 `
@@ -94,17 +108,19 @@ export const ProjectsH1 = styled.div`
         font-size: 2.5rem;
         margin-bottom: 10px;
     }
+    
 
 `
 
 export const ProjectsH2 = styled.div`
-    margin-bottom: 2px;
-    display: block;
+    margin-bottom: 2rem;
+    /* display: block; */
     text-align: center;
     font-size:  1.5rem;
     font-weight: 600;
     color: hsl(230,8%, 15%);
 
+ 
 `
 
 export const ProjectsP = styled.div`
@@ -113,7 +129,7 @@ export const ProjectsP = styled.div`
     /* text-align: center; */
 
 
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 `
 
 export const ProjectsTitle = styled.p`
@@ -132,4 +148,17 @@ export const ProjectsTitle = styled.p`
         font-size: 1.3rem;
         margin-bottom: 5rem;
     }
+
+
+`
+
+export const ArrowForward = styled(MdArrowForward)`
+    margin-left: 8px;
+    font-size: 1rem;
+    align-items: center;
+`
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 1rem;
+    align-items: center;
 `

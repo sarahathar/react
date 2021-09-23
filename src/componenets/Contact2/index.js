@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState,  Component } from 'react'
 import './styles.css'
-import emailjs from 'emailjs-com';
-import { Form, Input, TextArea, Button} from 'semantic-ui-react';
-import Swal from 'sweetalert2';
+import {Button} from '../ButtonElements';
+import emailjs from "emailjs-com"
+
 import {ContactContainer,
     ContactH1,
     ContactWrapper,
@@ -12,41 +12,52 @@ import {ContactContainer,
     ContactP,
     ContactTitle, ContactRowContainer, ContactInfoWrapper, ContactFormWrapper, ContactBtnWrapper, ArrowForward, ArrowRight, ButtonSend
     } from './ContactElements';
-    
+
+
     import myPDF from "../../pdf/resume.pdf";
 
-const SERVICE_ID = "service_7r8r4p1"
-const TEMPLATE_ID = "template_ann44nn"
-const USER_ID = "user_kWt9D2gTHhQnl3zGxHgiu"
 
 
 
-const Contact = () => {
-    const [hover, setHover] = useState(false)
+    class ContactForm extends Component {
+        state = {
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        }
+        handleSubmit(e) {
+            e.preventDefault()
+            const { name, email, subject, message } = this.state
+            let templateParams = {
+              from_name: email,
+              to_name: 'sarahathar2001@yahoo.com',
+              subject: subject,
+              message_html: message,
+             }
+             emailjs.send(
+              'yahoo',
+              'template_ann44nn',
+               templateParams,
+              'user_kWt9D2gTHhQnl3zGxHgiu'
+             )
+             this.resetForm()
+         }
 
-    const onHover = () => {
-        setHover(!hover)
-    }
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-          .then((result) => {
-            console.log(result.text);
-            Swal.fire({
-              icon: 'success',
-              title: 'Message Sent Successfully'
+         resetForm() {
+            this.setState({
+              name: '',
+              email: '',
+              subject: '',
+              message: '',
             })
-          }, (error) => {
-            console.log(error.text);
-            Swal.fire({
-              icon: 'error',
-              title: 'Ooops, something went wrong',
-              text: error.text,
-            })
-          });
+          }
+        handleChange = (param, e) => {
+            this.setState({ [param]: e.target.value })
+          }
 
-        e.target.reset()
-      };
+
+          render() {
     return (
 
         <ContactContainer id="contact">
@@ -105,62 +116,63 @@ const Contact = () => {
                     </div>
 
                 </ContactInfoWrapper>
+
                 <ContactFormWrapper>
-
-                <Form class="contact__form grid contact__tab" onSubmit={handleOnSubmit}>
-                    <div className='App' class="contact__inputs grid">
-
-
-
+                    <form action="" class="contact__form grid contact__tab" onSubmit={this.handleSubmit.bind(this)} >
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" name="name"></input>
+                                <input type="text" class="contact__input" name="name" value={this.state.name}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'name')}></input>
                             </div>
 
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" name="email"></input>
+                                <input type="email" class="contact__input" name="email" value={this.state.name}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'name')}></input>
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Project</label>
-                                <input type="text" class="contact__input" name="subject"></input>
+                                <input type="text" class="contact__input" name="subject" className="text-primary"
+                value={this.state.subject}
+                onChange={this.handleChange.bind(this, 'subject')}></input>
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
-                                <textarea id="" cols="0" rows="5" class="contact__input" name="message"></textarea>
+                                <textarea id="" cols="0" rows="5" class="contact__input" name="message" className="text-primary"
+                value={this.state.message}
+                onChange={this.handleChange.bind(this, 'message')}></textarea>
                             </div>
 
+                            <div>
+
+                             {/* <ContactBtnWrapper> */}
+                                <ButtonSend type="submit" value="Send" to="email"   variant="primary"/>
+                                
+                                {/* Interested, Email Me! {hover ? <ArrowForward/> : <ArrowRight/> } */}
+            
+
+                            {/* </ContactBtnWrapper>  */}
+                            </div>
 
                         </div>
-                        <div>
+                    </form>
 
 
-                        <ContactBtnWrapper>
-                            <ButtonSend type='submit' primary='true' dark='true'
-                                smooth={true} duration={500} spy={true} exact='true' offset={-80} onMouseEnter ={onHover}  onMouseLeave ={onHover}
-                            >Interested, Email Me! {hover ? <ArrowForward/> : <ArrowRight/> }
-                            </ButtonSend>
-                        </ContactBtnWrapper>
-
-
-                        </div>
-
-
-                        </div>
-                    </Form>
-
+              
                 </ContactFormWrapper>
             </ContactRowContainer>
+
             </ContactContainer>
 
+
     )
+    
+  }
 }
-
-export default Contact;
-
-
-
+export default ContactForm

@@ -8,7 +8,7 @@ import {SidebarContainer,
     SideBtnWrap,
     SidebarRoute} from './SidebarElements';
 
-
+import myPDF from "../../pdf/resume.pdf";
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -34,7 +34,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/email">Resume</SidebarRoute>
+                    <SidebarRoute href={myPDF} download="Sarah Athar Resume.pdf" target="_blank">Resume</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

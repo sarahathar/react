@@ -53,12 +53,12 @@ export const SidebarLink = styled(LinkScroll)`
     }
 `
 
-export const SideBtnWrap = styled(LinkScroll)`
+export const SideBtnWrap = styled.nav`
     display: flex;
     justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkRoute)`
+export const SidebarRoute = styled.a`
        border-radius: 50px;
        background: hsl(230,69%, 61%);
        white-space: nowrap;

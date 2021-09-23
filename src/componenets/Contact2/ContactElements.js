@@ -138,7 +138,7 @@ export const ContactTitle = styled.p`
       font-weight: 600;
     font-size: 1.7rem;
     color: hsl(230 ,8%, 45%);
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     /* padding-left: 30%; */
 
     @media only screen and (min-width: 480px) and (max-width: 760px) {
@@ -246,7 +246,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `
 
 
-export const ButtonSend = styled.button`
+export const ButtonSend = styled.input`
     border-radius: 50px;
     background: ${({primary}) => (primary ? 'hsl(230,69%, 61%)' : 'hsl(230,69%, 61%)')};
     white-space: nowrap;
