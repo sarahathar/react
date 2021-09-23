@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9244d7c.chunk.css",
-    "main.js": "/static/js/main.bc19da90.chunk.js",
-    "main.js.map": "/static/js/main.bc19da90.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.50440f15.js",
-    "runtime-main.js.map": "/static/js/runtime-main.50440f15.js.map",
-    "static/css/2.3da02b1a.chunk.css": "/static/css/2.3da02b1a.chunk.css",
-    "static/js/2.01186e0a.chunk.js": "/static/js/2.01186e0a.chunk.js",
-    "static/js/2.01186e0a.chunk.js.map": "/static/js/2.01186e0a.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.3da02b1a.chunk.css.map": "/static/css/2.3da02b1a.chunk.css.map",
-    "static/css/main.d9244d7c.chunk.css.map": "/static/css/main.d9244d7c.chunk.css.map",
-    "static/js/2.01186e0a.chunk.js.LICENSE.txt": "/static/js/2.01186e0a.chunk.js.LICENSE.txt",
-    "static/media/Untitled design (2).png": "/static/media/Untitled design (2).a16b4ae4.png",
-    "static/media/resume.fa315b2a.pdf": "/static/media/resume.fa315b2a.pdf",
-    "static/media/video.85d7bb38.mp4": "/static/media/video.85d7bb38.mp4"
+    "main.css": "/github.io/react/static/css/main.d9244d7c.chunk.css",
+    "main.js": "/github.io/react/static/js/main.bc19da90.chunk.js",
+    "main.js.map": "/github.io/react/static/js/main.bc19da90.chunk.js.map",
+    "runtime-main.js": "/github.io/react/static/js/runtime-main.94df3a8d.js",
+    "runtime-main.js.map": "/github.io/react/static/js/runtime-main.94df3a8d.js.map",
+    "static/css/2.3da02b1a.chunk.css": "/github.io/react/static/css/2.3da02b1a.chunk.css",
+    "static/js/2.b2c05de1.chunk.js": "/github.io/react/static/js/2.b2c05de1.chunk.js",
+    "static/js/2.b2c05de1.chunk.js.map": "/github.io/react/static/js/2.b2c05de1.chunk.js.map",
+    "index.html": "/github.io/react/index.html",
+    "static/css/2.3da02b1a.chunk.css.map": "/github.io/react/static/css/2.3da02b1a.chunk.css.map",
+    "static/css/main.d9244d7c.chunk.css.map": "/github.io/react/static/css/main.d9244d7c.chunk.css.map",
+    "static/js/2.b2c05de1.chunk.js.LICENSE.txt": "/github.io/react/static/js/2.b2c05de1.chunk.js.LICENSE.txt",
+    "static/media/Untitled design (2).png": "/github.io/react/static/media/Untitled design (2).a16b4ae4.png",
+    "static/media/resume.fa315b2a.pdf": "/github.io/react/static/media/resume.fa315b2a.pdf",
+    "static/media/video.85d7bb38.mp4": "/github.io/react/static/media/video.85d7bb38.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.50440f15.js",
+    "static/js/runtime-main.94df3a8d.js",
     "static/css/2.3da02b1a.chunk.css",
-    "static/js/2.01186e0a.chunk.js",
+    "static/js/2.b2c05de1.chunk.js",
     "static/css/main.d9244d7c.chunk.css",
     "static/js/main.bc19da90.chunk.js"
   ]
