@@ -71,7 +71,7 @@ const Projects = () => {
           <i class="uil uil-arrow-right button__icon"></i>
       </span> */}
 
-      <a href="" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
+      <a href="mailto:sarahathar2001@yahoo.com" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80} class="button button--flex button--small button--link services__button">
       Email to see!
       {hover ? <ArrowForward/> : <ArrowRight/> }
@@ -87,7 +87,7 @@ const Projects = () => {
       <ProjectsP>An application that Compressed and Decompressed Text Files using the Huffman Encoding algorithm for Proper Memory
 Management. A custom-made priorityqueue was implemented that used Binary Search Trees and Linked Lists to handle
 duplicate priorities.</ProjectsP>
-<a href="" target = "_blank"   onMouseEnter ={onHover}  onMouseLeave ={onHover}
+<a href="mailto:sarahathar2001@yahoo.com" target = "_blank"   onMouseEnter ={onHover}  onMouseLeave ={onHover}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80} class="button button--flex button--small button--link services__button">
       Email to see!
       {hover ? <ArrowForward/> : <ArrowRight/> }
@@ -100,7 +100,7 @@ duplicate priorities.</ProjectsP>
     <ProjectsH2>Autocomplete</ProjectsH2>
       <ProjectsP>Implementation of an Abstract Class for AutocompleteList using vector and sorting algorithms, and then a program that uses
 the custom-made class to suggest the most popular completions based off an incomplete input word.</ProjectsP>
-  <a href="" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
+  <a href="mailto:sarahathar2001@yahoo.com" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80} class="button button--flex button--small button--link services__button">
       Email to see!
       {hover ? <ArrowForward/> : <ArrowRight/> }
@@ -115,7 +115,7 @@ the custom-made class to suggest the most popular completions based off an incom
       <ProjectsP>Used Pair Programming to develop a Program that performs Word-Lookup, Encodes and Decodes Text using Vigenere Cipher
 Algorithm, and Auto-Decodes provided text file using best-possible keyword for Decoding.</ProjectsP>
 
-      <a  href="" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
+      <a  href="mailto:sarahathar2001@yahoo.com" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
                     smooth={true} duration={500} spy={true} exact='true' offset={-80} class="button button--flex button--small button--link services__button">
       Email to see!
       {hover ? <ArrowForward/> : <ArrowRight/> }

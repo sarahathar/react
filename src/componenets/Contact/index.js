@@ -125,7 +125,7 @@ const Contact = () => {
                             </div>
 
                             <div class="contact__content">
-                                <label for="" class="contact__label">Project</label>
+                                <label for="" class="contact__label">Subject</label>
                                 <input type="text" class="contact__input" name="subject"></input>
                             </div>
 

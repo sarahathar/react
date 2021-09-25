@@ -229,6 +229,7 @@ export const ContactFormWrapper = styled.div`
 
 export const ContactBtnWrapper = styled.div`
     margin-top: 32px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
