@@ -59,6 +59,18 @@ const Projects = () => {
       </a>
       </SwiperSlide>
 
+      <SwiperSlide>
+     <ProjectsH2>Personal Website - SarahStrikes</ProjectsH2>
+      <ProjectsP>Designed and Developed this website from scratch, during the Summer using React!</ProjectsP>
+
+      <a  href="https://github.com/sarahathar/react" target = "_blank" onMouseEnter ={onHover}  onMouseLeave ={onHover}
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80} class="button button--flex button--small button--link services__button">
+      Check it out!
+      {hover ? <ArrowForward/> : <ArrowRight/> }
+  
+          {/* <i class="uil uil-arrow-right button__icon"></i> */}
+      </a>
+      </SwiperSlide>
     <SwiperSlide>
 
       <ProjectsH2>15 Puzzle</ProjectsH2>
